@@ -1,0 +1,91 @@
+/* enclosure for album list with every new album tobe added in row with flex wrap*/
+.albumenclosure{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/* enclosure for album detail */
+.albumcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px;
+	margin-left: 1px;
+	margin-right: 1px;
+    width: 20vw;
+    margin-top: 20px;
+    background-color: lavender;
+    border: 1px solid skyblue;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+.albumtitle{
+    padding: 1px;
+    text-align: center;
+    height: 20vh;
+    border: 1px solid lightpink;
+    border-radius: 3px;
+}
+
+.albumbuttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.albumbuttons button{
+    height: auto;
+    width: 3vw;
+    padding : 2px;
+    border: 0px solid transparent;
+}
+
+button img{
+    width: 100%;
+    
+}
+
+/* media queries to make the page responsive */
+
+@media screen and (max-width : 600px) {
+	.albumtitle{
+		font-size: 1.6vw !important;
+	}
+	.btn-album{
+		width: 5vw;
+	}
+}
+
+
+
+@media screen and (min-width : 600px) {
+	.albumtitle{
+		font-size: 1.5vw !important;
+	}
+	.btn-album{
+		width: 4vw;
+	}
+}
+
+@media screen and (min-width : 768px) {
+	.albumtitle{
+		font-size: 1.4vw !important;
+	}
+	.btn-album{
+		width: 3vw;
+	}
+}
+
+@media screen and (min-width : 992px) {
+	.albumtitle{
+		font-size: 1.3vw !important;
+	}
+	.btn-album{
+		width: 2vw;
+	}
+}

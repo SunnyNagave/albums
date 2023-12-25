@@ -1,0 +1,17 @@
+.form-container{
+    margin-top : 10vh;
+    display : flex;
+    justify-content : center;
+}
+
+/* style to make input fields align center and one field below eachother.  */
+form{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    width: 50vw;
+}
+    
+#album-details{
+    height:15vh;
+}
